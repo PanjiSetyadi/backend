@@ -107,7 +107,7 @@ export const forgotPassword = async (req, res) => {
       },
     });
 
-    const resetURL = `http://localhost:5173/reset-password/${token}`;
+    const resetURL = `https://nutrivision-brown.vercel.app//reset-password/${token}`;
     await transporter.sendMail({
       to: user.email,
       subject: 'Reset Password',
